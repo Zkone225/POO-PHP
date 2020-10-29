@@ -4,7 +4,7 @@
 class Pokemon
 {
     private $nom;
-    private $poids;
+    protected $poids;
 
 public function __construct(string $nom, float $poids)
 {

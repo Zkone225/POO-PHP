@@ -6,9 +6,16 @@ class DeMer extends Acquatique
 //    {
 //        return "";
 //    }
-    public function vitesse(): int
+    public function vitesse(): float
     {
-        return $vitesse = $this->getPoids / (25* $this->getNombreNageoires);
+        return $vitesse = ($this->poids / (25* $this->nombreNageoires));
+    }
+    public function __toString()
+    {
+        return parent::__toString()
+
+
+            ;
     }
 
 }

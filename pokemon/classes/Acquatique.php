@@ -3,12 +3,13 @@
 
 abstract class Acquatique extends Pokemon
 {
-    private $nombreNageoires;
+    protected $nombreNageoires;
 
 
 
-    public function __construct(int $nombreNageoires)
+    public function __construct(string $nom, float $poids, int $nombreNageoires)
     {
+        parent::__construct($nom, $poids);
         $this->nombreNageoires = $nombreNageoires;
     }
 
@@ -24,7 +25,18 @@ abstract class Acquatique extends Pokemon
         $this->nombreNageoires = $nombreNageoires;
     }
 
-    public abstract function vitesse(): int;
+    public abstract function vitesse(): float;
 
+    public function __toString()
+    {
+        return parent::__toString() .
+            "<br>ma vitesse est:".   $this->vitesse() . ".km/h".
+            "<br>j'ai " . $this->getNombreNageoires() . " pattes"
+
+
+            ;
+    }
 
 }
+
+
