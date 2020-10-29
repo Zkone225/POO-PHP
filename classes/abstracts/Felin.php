@@ -1,5 +1,4 @@
 <?php
-require_once Animal
 
 abstract class Felin extends Animal
 {
