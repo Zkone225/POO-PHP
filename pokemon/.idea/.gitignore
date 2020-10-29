@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../../:\wamp64\www\POO-PHP\.idea/dataSources/
+/../../../../../../../../:\Users\admin\Documents\GitHub\POO-PHP\pokemon\.idea/dataSources/
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
